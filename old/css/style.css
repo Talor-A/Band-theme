@@ -5,9 +5,6 @@
  */
 
 /* Toggle Styles */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:800,400);
-@import url(https://fonts.googleapis.com/css?family=Gentium+Basic:400,700);
-
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
@@ -15,11 +12,9 @@
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
 #wrapper.toggled {
     padding-left: 250px;
 }
-
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
@@ -33,30 +28,18 @@
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    font-family: "Open Sans";
-    font-weight: 800;
-    text-transform: uppercase;
 }
-
 #wrapper.toggled #sidebar-wrapper {
     width: 250px;
 }
-
 #page-content-wrapper {
     width: 100%;
     position: absolute;
-    /*enabling will disable edge-to-edge pictures.
-    padding: 15px;*/
-    overflow: hidden;
-    font-family: "Gentium Basic",serif;
-    font-size: 20px;
 }
-
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
     margin-right: -250px;
 }
-
 /* Sidebar Styles */
 
 .sidebar-nav {
@@ -123,8 +106,7 @@
     }
 
     #page-content-wrapper {
-        /*enabling will disable edge-to-edge pictures.
-        padding: 20px;*/
+        padding: 20px;
         position: relative;
     }
 
@@ -132,41 +114,7 @@
         position: relative;
         margin-right: 0;
     }
-    .row {
-        /*enabling will disable edge-to-edge pictures.*/
-        margin-right: -15px;
-    }
 }
-
-/*---------------Misc. Helper Classes---------------*/
 .padding-none {
-    padding: 0px;
-}
-.margin-none {
-    margin: 0px;
-}
-.img-full {
-    width: 100%;
-}
-section {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-/*---------------Header---------------*/
-.container-fluid .jumbotron {
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    padding-left: 15px;
-}
-.header {
-    color: #fff;
-    position: absolute;
-    background: none;
-    z-index: 3;
-}
-h1 {
-    font-family: "Open Sans";
-    font-weight: 800;
-    text-transform: capitalize;
+    padding: 0;
 }
