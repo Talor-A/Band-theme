@@ -9,16 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Scrolling Nav - Start Bootstrap Template</title>
+    <title>Simple Sidebar - Start Bootstrap Template</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!-- Custom CSS -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
+    <link href="css/simple-sidebar.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,122 +26,65 @@
 
 </head>
 
-<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+<body>
+<div id="wrapper">
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-<!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-right navbar-nav">
-                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                <li class="hidden">
-                    <a class="page-scroll" href="#page-top"></a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#about">About</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#services">Services</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">Start Bootstrap</a>
+            </li>
+            <li><a href="#">Dashboard</a>
+            </li>
+            <li><a href="#">Shortcuts</a>
+            </li>
+            <li><a href="#">Overview</a>
+            </li>
+            <li><a href="#">Events</a>
+            </li>
+            <li><a href="#">About</a>
+            </li>
+            <li><a href="#">Services</a>
+            </li>
+            <li><a href="#">Contact</a>
+            </li>
+        </ul>
     </div>
-    <!-- /.container -->
-</nav>
+    <!-- /#sidebar-wrapper -->
 
-<!-- Header Section-->
-<section id="intro" class="header overlay">
-    <div class="container">
-        <div class="row-fluid">
-            <div class="col-lg-12">
-                <h1 class="big-text">Scrolling Nav</h1>
-            </div>
-        </div>
-    </div>
-    <a class="intro-button page-scroll" href="#about"><h2><i class="fa fa-inverse fa-2x fa-arrow-circle-o-down"></i><H2></a>
-</section>
-
-<!-- About Section -->
-<section id="about" class="section-color">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-12">
-                <h1 class="big-text">Big text.</h1>
-                <div class="col-md-4">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </div>
-                <div class="col-md-4">
-                    <ul>
-                        <li>awesome.</li>
-                        <li>awesome.</li>
-                        <li>awesome.</li>
-                    </ul>
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+                    <img src="https://images.unsplash.com/46/dpzDUkJrTHb71Yla1EzF_IMG_4098.jpg?crop=entropy&fit=crop&fm=jpg&h=1000&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=900" class="img-responsive" />
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Simple Sidebar</h1>
+                    <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+                    <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
                 </div>
             </div>
         </div>
     </div>
-</section>
+    <!-- /#page-content-wrapper -->
 
-<!-- Services Section -->
-<section id="services" class="">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="text-primary">Services Section</h1>
-            </div>
-        </div>
-    </div>
-</section>
+</div>
+<!-- /#wrapper -->
 
-<!-- Contact Section -->
-<section id="contact" class="">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1>Contact Section</h1>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <i class="fa fa-4x fa-inverse fa-github"></i>
-                <i class="fa fa-4x fa-inverse fa-facebook"></i>
-            </div>
-        </div>
-    </div>
-</footer>
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 
-<!-- Scrolling Nav JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/scrolling-nav.js"></script>
-
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+</script>
 
 </body>
 
