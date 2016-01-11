@@ -1,15 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Erica+One);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);
+
 html, body {
+    font-family: "Open Sans",sans-serif;
     height: 100%;
     position: relative;
+    font-size: 18px;
 }
 section {
     /*padding/margin top helps with the scrolling buttons to scroll to the right area*/
     margin-top: -50px;
-    padding-top: 100px;
+    padding-top: 80px;
+    padding-bottom: 30px;
     padding-left: 15px;
     padding-right: 15px;
 }
-/*Helper classes - use these!*/
+.text-primary {
+    color: #CC527A;
+}
+h1 {
+    font-family: "Erica One";
+}
+/*------------------Helper Classes------------------*/
 .padding-none {
     /*removes padding */
     padding-left: 0px;
@@ -28,23 +40,23 @@ section {
     /*used on images to make them always go to screen edge*/
     width: 100%
 }
-.jumbotron {
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 0px;
-    border-radius: 0px;
-    padding-left: 15px;
-}
+
+
+/*------------------Header------------------*/
 .header {
-    color: #fff;
+    margin-left: 15px;
     position: absolute;
     background: none;
-    z-index: 3;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
 }
+.header h1 {
+    line-height: 0.7;
+}
+/*------------------Sidebar------------------*/
 .sidebar {
     background-color: #353535;
-}
-.sidebar ul {
-
 }
 .sidebar a {
     color: #acacac;
@@ -54,41 +66,42 @@ section {
     background-color: #454545;
     border-right: 5px solid #CC527A;
 }
-
 .sidebar-text {
+    /*Hide on smaller screens, enabled below*/
     display: none;
 }
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
 
-}
+
+/*------------------Screen Size------------------*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {}
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-
-}
+@media only screen and (min-width : 480px) {}
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-}
+@media only screen and (min-width : 768px) {}
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+    /*Enable Sidebar text on larger screens*/
     .sidebar-text {
         display: inline;
         padding-left: 1em;
    }
-
+   .header h1 {
+       font-size: 6em;
+   }
 }
-
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
-}
+@media only screen and (min-width : 1200px) {}
 
 
-
+/*------------------Footer------------------*/
 footer {
+    color: #fff;
     background-color: #CC527A;
     padding: 60px;
+
 }
