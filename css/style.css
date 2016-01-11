@@ -1,0 +1,94 @@
+html, body {
+    height: 100%;
+    position: relative;
+}
+section {
+    /*padding/margin top helps with the scrolling buttons to scroll to the right area*/
+    margin-top: -50px;
+    padding-top: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*Helper classes - use these!*/
+.padding-none {
+    /*removes padding */
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.margin-none {
+    /*removes margin*/
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.full-height {
+    /*used on the sidebar to make it cover the whole screen*/
+    height: 100%;
+}
+.full-width {
+    /*used on images to make them always go to screen edge*/
+    width: 100%
+}
+.jumbotron {
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    padding-left: 15px;
+}
+.header {
+    color: #fff;
+    position: absolute;
+    background: none;
+    z-index: 3;
+}
+.sidebar {
+    background-color: #353535;
+}
+.sidebar ul {
+
+}
+.sidebar a {
+    color: #acacac;
+}
+.sidebar .active > a {
+    color: #CC527A;
+    background-color: #454545;
+    border-right: 5px solid #CC527A;
+}
+
+.sidebar-text {
+    display: none;
+}
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .sidebar-text {
+        display: inline;
+        padding-left: 1em;
+   }
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+
+footer {
+    background-color: #CC527A;
+    padding: 60px;
+}
