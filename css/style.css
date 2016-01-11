@@ -7,10 +7,11 @@ html, body {
     position: relative;
     font-size: 18px;
 }
+
 section {
     /*padding/margin top helps with the scrolling buttons to scroll to the right area*/
-    margin-top: -50px;
-    padding-top: 80px;
+    margin-top: -80px;
+    padding-top: 130px;
     padding-bottom: 30px;
     padding-left: 15px;
     padding-right: 15px;
@@ -70,10 +71,17 @@ h1 {
     /*Hide on smaller screens, enabled below*/
     display: none;
 }
-
-
 /*------------------Screen Size------------------*/
-
+.sidebar {
+    width: 100px;
+}
+.content {
+    padding-left: 100px;
+    padding-right: 0px;
+}
+.nav {
+    text-align: center;
+}
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {}
 
@@ -94,6 +102,15 @@ h1 {
     .sidebar-text {
         display: inline;
         padding-left: 1em;
+   }
+   .sidebar {
+       width: 200px;
+   }
+   .content {
+       padding-left: 200px;
+   }
+   .nav {
+       text-align: left;
    }
 }
 /* Large Devices, Wide Screens */
